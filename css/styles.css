@@ -136,14 +136,19 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
+.portfolio-project img {
+  display: block;
+}
 .portfolio-project .item {
-  width: 370px;
+  width: calc(100%-60px / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid var(--portfolio-border-color);
-  box-sizing: border-box;
 }
 
+.portfolio-border {
+  border: 1px solid var(--portfolio-border-color);
+}
 .portfolio-project .item:nth-child(3n) {
   margin-right: 0;
 }
